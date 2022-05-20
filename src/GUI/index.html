@@ -1,68 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Function Plotter</title>
 
-        <link rel="stylesheet" href="./style/style.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Plotter</title>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="./style/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./style/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./style/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./style/favicon/site.webmanifest">
+    <link rel="stylesheet" href="./style/style.css" />
 
-        <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
-        <script src="./scripts/plotly.js"></script>
-    </head>
-    <body>
+    <link rel="apple-touch-icon" sizes="180x180" href="./style/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./style/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./style/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./style/favicon/site.webmanifest">
+
+    <!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+    <script src="./scripts/plotly.js"></script>
+</head>
+
+<body>
+    <div class="main">
         <div class="center">
             <h1>Function Plotter</h1>
             <form method="post" id="form">
                 <div class="txt_field">
-                    <input
-                        name="formula"
-                        placeholder="&emsp;&emsp;&emsp; x^2"
-                        type="text"
-                        id="formula"
-                        required
-                    />
+                    <input name="formula" placeholder="&emsp;&emsp;&emsp; x^2" type="text" id="formula" required />
                     <span></span>
-                    <label >F(x)=</label>
+                    <label>F(x)=</label>
                 </div>
                 <label">Min</label>
-                <div class="txt_field">
-                    <input
-                        type="number"
-                        placeholder="Min"
-                        id="min"
-                        value="-100"
-                        required
-                    />
-                    <span></span>
-                </div>
-                <label">Max</label>
-                <div class="txt_field">
-                    <input
-                        type="number"
-                        placeholder="Max"
-                        id="max"
-                        value="100"
-                        required
-                    />
-                    <span></span>
-                </div>
-                <input type="submit" value="Plot" />
-                <div id="error" style=" display: none">
-                    <h3 style="color: #a80019;">Errors:</h3>
-                    <ul id="error_list"></ul>
-                </div>
+                    <div class="txt_field">
+                        <input type="number" placeholder="Min" id="min" value="-100" required />
+                        <span></span>
+                    </div>
+                    <label">Max</label>
+                        <div class="txt_field">
+                            <input type="number" placeholder="Max" id="max" value="100" required />
+                            <span></span>
+                        </div>
+                        <input type="submit" value="Plot" />
+                        <div id="error" style=" display: none">
+                            <h3 style="color: #a80019;">Errors:</h3>
+                            <ul id="error_list"></ul>
+                        </div>
             </form>
             <br />
             <div id="graph"></div>
         </div>
-    </body>
-    <!-- <script type="module" src="plot.js"></script> -->
-    <script type="module" src="./scripts/process.js"></script>
+    </div>
+
+</body>
+<!-- <script type="module" src="plot.js"></script> -->
+<script type="module" src="./scripts/process.js"></script>
+
 </html>
