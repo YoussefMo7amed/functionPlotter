@@ -1,8 +1,8 @@
 const PATH = "./../../process"
-import { result } from "./../process/result.js";
-import { plot, removePlot } from "./../process/plot.js";
-import { deleteErrors, printErrors, findErrors } from "./../process/error.js";
-import { extract } from "./../process/extract.js";
+import { result } from "./../../process/result.js";
+import { plot, removePlot } from "./../../process/plot.js";
+import { deleteErrors, printErrors, findErrors } from "./../../process/error.js";
+import { extract } from "./../../process/extract.js";
 
 function createX(min, max) {
     let x = [];
