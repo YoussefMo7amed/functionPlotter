@@ -3,6 +3,7 @@
 ![Logo](./screenshots/logo.jpg)
 
 Function Plotter is an interactive mathematical function plotter, and a cross platform GUI application built with [ElectronJs](https://www.electronjs.org/) and could be hosted as website.
+You can try it from [here](https://youssefmo7amed.github.io/functionPlotter/).
 
 ---
 
